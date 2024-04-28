@@ -1,13 +1,12 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { format } from "timeago.js";
 import { AuthContext } from "../../context/AuthContext";
-import { SocketContext } from "../../context/socketContext";
+import { SocketContext } from "../../context/SocketContext";
 import apiRequest from "../../lib/apiRequest";
 import { useNotificationStore } from "../../lib/notificationStore";
 import "./chat.scss";
 
 function Chat({ chats }) {
-    // console.log(chats);
     const [chat, setChat] = useState(null);
     const { currentUser } = useContext(AuthContext);
     const { socket } = useContext(SocketContext);
