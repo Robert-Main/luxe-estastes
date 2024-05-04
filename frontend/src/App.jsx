@@ -4,6 +4,8 @@ import {
     profilePageLoader,
     singlePageLoader,
 } from "./lib/loader";
+import About from "./routes/about/about";
+import Contact from "./routes/contact/contact";
 import HomePage from "./routes/homePage/homePage";
 import { Layout, RequireAuth } from "./routes/layout/layout";
 import ListPage from "./routes/listPage/listPage";
@@ -42,6 +44,14 @@ function App() {
                 {
                     path: "/register",
                     element: <Register />,
+                },
+                {
+                    path: "/contact",
+                    element: <Contact />,
+                },
+                {
+                    path: "/about",
+                    element: <About />,
                 },
             ],
         },
