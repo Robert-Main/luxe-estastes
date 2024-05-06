@@ -1,6 +1,8 @@
+import "./about.scss";
+
 const About = () => {
     return (
-        <div className="about">
+        <div className="login">
             <div className="formContainer">
                 <p>
                     Welcome to our platform! At Luxe estate, we&apos;re
